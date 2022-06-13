@@ -1,0 +1,30 @@
+.hero {
+  background: $blue;
+  background: url(/project_surf/img/surfers.jpeg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 650px;
+  color: #FFF;
+}
+.hero__title-section {
+  width: 45%;
+}
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 21px;
+  padding-bottom: 63px;
+}
+
+.hero__main-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.hero__title-desc {
+  font-size: 21px;
+  margin-bottom: 49px;
+}

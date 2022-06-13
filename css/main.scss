@@ -1,0 +1,31 @@
+$containerWidth: 1100px;
+$baseFontSize: 18px;
+$baseFontWeight: 400;
+
+//colors
+$black: #292929;
+$grey: #666666;
+$blue: #1968B1; 
+
+//normalize
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
+@import  "layout";
+
+@import "components/hero";
+@import "components/header";
+@import "components/features";
+@import "components/feature";
+@import "components/btn";
+@import "components/section.scss";
+@import "components/headline";
+@import "components/benefits";
+@import "components/benefit";
+@import "components/feedbacks.scss";
+@import "components/interactive-avatar";
+@import "components/switcher";
+@import "components/order.scss";
+@import "components/form.scss";
+@import "components/radio.scss";

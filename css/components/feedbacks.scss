@@ -1,0 +1,38 @@
+.feedbacks__title {
+  margin-bottom: 32px;
+}
+.feedbacks__display {
+  background: #F8FAF9;
+  padding: 42px 142px 42px 42px;
+}
+.feedbacks__display-inner {
+  display: flex;
+}
+.feedback__avatar {
+  width: 253px;
+  height: 264px;
+}
+.feedback__avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.feedback__content {
+  padding-top: 27px;
+  padding-right: 17px;
+  padding-bottom: 27px;
+  padding-left: 36px;
+  flex: 1;
+}
+.feedback__title {
+  font-size: 27px;
+  font-weight: 700;
+  color: $black;
+  margin-bottom: 15px;
+
+}
+.feedback__author {
+  color: $black;
+  font-weight: 500;
+  margin-top: 27px;
+} 
