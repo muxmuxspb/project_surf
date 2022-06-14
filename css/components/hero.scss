@@ -7,7 +7,8 @@
   color: #FFF;
 }
 .hero__title-section {
-  width: 45%;
+  margin-top: 18px;
+  width: 60%;
 }
 .hero__container {
   display: flex;
@@ -23,8 +24,11 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 18px;
+  padding-right: 70px;
 }
 .hero__title-desc {
   font-size: 21px;
-  margin-bottom: 49px;
+}
+.hero__btn {
+  margin-top: 58px;
 }
