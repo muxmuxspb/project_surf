@@ -1,18 +1,32 @@
 .benefits {
   display: flex;
+  @include phones {
+    flex-direction: column;
+    padding: 0 rem(8px);
+  }
 }
 
 .benefits__item {
   flex: 1;
   padding: 0 3%;
   position: relative;
+  @include tablets {
+    padding: 0 1%;
+  }
+  @include phones {
+    padding: 0 0;
+    display: flex;
+  }
 
   &:before {
     content: url("/project_surf/img/dots.png");
     position: absolute;
-    top: 58px;
+    top: rem(58px);
     right: 0;
     transform: translateX(50%);
+    @include tablets {
+      display: none;
+    }
   }
 
   &:first-child {
@@ -24,6 +38,6 @@
 
     &:before {
       display: none;
-  }
+    }
   }
 }

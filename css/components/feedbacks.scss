@@ -1,16 +1,35 @@
 .feedbacks__title {
-  margin-bottom: 32px;
+  margin-bottom: rem(32px);
+  @include phones {
+    margin-bottom: rem(20px);
+  }
 }
 .feedbacks__display {
-  background: #F8FAF9;
-  padding: 42px 142px 42px 42px;
+  background: #f8faf9;
+  padding: rem(42px) rem(142px) rem(42px) rem(42px);
+  @include tablets {
+    padding: rem(56px) rem(24px) rem(22px);
+    margin: 0 3%;
+  }
+  @include phones {
+    margin: 0 2%;
+    padding-bottom: rem(32px);
+  }
 }
 .feedbacks__display-inner {
   display: flex;
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .feedback__avatar {
-  width: 253px;
-  height: 264px;
+  width: rem(253px);
+  height: rem(264px);
+  @include tablets {
+    width: rem(130px);
+    height: rem(130px);
+  }
 }
 .feedback__avatar-img {
   object-fit: cover;
@@ -18,21 +37,41 @@
   height: 100%;
 }
 .feedback__content {
-  padding-top: 27px;
-  padding-right: 17px;
-  padding-bottom: 27px;
-  padding-left: 36px;
+  padding-top: rem(27px);
+  padding-right: rem(17px);
+  padding-bottom: rem(27px);
+  padding-left: rem(36px);
   flex: 1;
+  @include tablets {
+    text-align: center;
+    padding: rem(32px) rem(4px) 0;
+  }
+  @include phones {
+    padding: rem(26px) rem(2px) 0;
+  }
 }
 .feedback__title {
-  font-size: 27px;
+  font-size: rem(27px);
   font-weight: 700;
   color: $black;
-  margin-bottom: 15px;
-
+  margin-bottom: rem(15px);
+  @include phones {
+    padding: 0 20%;
+    margin-bottom: rem(12px);
+  }
 }
 .feedback__author {
   color: $black;
+  font-size: rem(18px);
   font-weight: 500;
-  margin-top: 27px;
-} 
+  margin-top: rem(27px);
+  @include tablets {
+    margin-top: rem(20px);
+  }
+  @include phones {
+    margin-top: rem(14px);
+  }
+}
+.feedback__text {
+  font-size: rem(18px);
+}

@@ -1,11 +1,20 @@
 .feedbacks__switcher {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: rem(15px);
+  @include tablets {
+    margin-top: rem(32px);
+  }
+  @include phones {
+    margin-top: rem(30px);
+  }
 }
 
 .feedback__switcher-item {
-  margin-right: 6px;
+  margin-right: rem(6px);
+  @include phones {
+    margin-right: rem(10px);
+  }
 
   &:last-child {
     margin-right: 0;

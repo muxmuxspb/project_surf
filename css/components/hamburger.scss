@@ -1,0 +1,15 @@
+.hamburger {
+  width: rem(26px);
+  height: rem(24px);
+  display: none;
+
+  @include tablets {
+    display: inline;
+  }
+}
+
+.hamburger-icon {
+  width: rem(24px);
+  height: rem(26px);
+  fill: #fff;
+}

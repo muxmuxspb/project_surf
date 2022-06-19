@@ -1,30 +1,40 @@
 .btn {
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 35px;
-  padding: 21px 41px;
+  border-radius: rem(35px);
+  padding: rem(20px) rem(41px);
   border: none;
+  @include phones {
+    font-size: rem(19px);
+    padding: rem(18px) rem (36px);
+  }
 
-  
   &--theme--yellow {
-    background: #FEDB3F;
+    background: #fedb3f;
     color: #000;
     &:hover {
-      background: #FFD517;
+      background: #ffd517;
+    }
+    @include phones {
+      font-size: rem(16px);
+      padding: rem(18px) rem(40px);
     }
   }
 
   &--theme--clear {
     background: none;
     color: #ffffff;
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 400;
     text-transform: none;
-    padding-left: 19px;
+    padding-left: rem(19px);
+    @include tablets {
+      padding-left: rem(34px);
+    }
     &:hover {
-      color: #FEDB3F;
+      color: #fedb3f;
     }
   }
 }

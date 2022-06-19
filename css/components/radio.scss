@@ -2,13 +2,16 @@
   display: flex;
   cursor: pointer;
   user-select: none;
-  margin-right: 25px;
+  margin-right: rem(25px);
+  @include phones {
+    margin-right: rem(19px);
+  }
 
   &--checkbox {
     .radio__visible {
-      border-radius: 4px;
-      width: 24px;
-      height: 24px;
+      border-radius: rem(4px);
+      width: rem(24px);
+      height: rem(24px);
     
     &:before {
       background: url(/project_surf/img/checkmark.png) center no-repeat;
@@ -26,8 +29,8 @@
   }
 }
 .radio__visible {
-  width: 25px;
-  height: 25px;
+  width: rem(25px);
+  height: rem(25px);
   position: relative;
   border-radius: 50%;
   background: #FFFFFF;
@@ -35,8 +38,8 @@
   &:before {
     display: none;
     content: "";
-    width: 13px;
-    height: 13px;
+    width: rem(13px);
+    height: rem(13px);
     background: #FEDB3F;
     border-radius: 50%;
     position: absolute;
