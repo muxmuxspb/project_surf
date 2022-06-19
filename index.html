@@ -4,18 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Surfboard</title>
   <link rel="stylesheet" href="/project_surf/css/main.css">
 </head>
 
-<body>  
+<body>
   <div class="wrapper">
     <div class="maincontent">
       <section class="hero">
         <div class="container hero__container">
           <header class="header">
-            <img src="/project_surf/img/logo.svg" alt="logo">
+            <svg class="logo-icon">
+              <use xlink:href="/project_surf/sprites.svg#logo"></use>
+            </svg>
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
@@ -41,11 +43,16 @@
                 </li>
               </ul>
             </nav>
-            <a href="tel:+78009039090" class="phone-number">
-              <span class="phone-number__icon">
-                <img src="/project_surf/img/phone.svg" class="phone-number__icon" alt="phone icon">
-              </span>
+            <a href="tel:+78009039090" class="phone-number header__phone-number">
+              <svg class="phone-icon">
+                <use xlink:href="/project_surf/sprites.svg#phone"></use>
+              </svg>
               <span class="phone-number__text">8 800 903 90 90</span>
+            </a>
+            <a href="" class="hamburger">
+              <svg class="hamburger-icon">
+                <use xlink:href="/project_surf/sprites.svg#hamburger"></use>
+              </svg>
             </a>
           </header>
           <div class="hero__title-section">
@@ -59,19 +66,25 @@
             <ul class="features">
               <li class="features__item feature">
                 <div class="feature__icon">
-                  <img src="/project_surf/img/surf.svg" alt="surf_icon">
+                  <svg class="feature-icon">
+                    <use xlink:href="/project_surf/sprites.svg#surf-icon"></use>
+                  </svg>
                 </div>
                 <div class="feature__text">Уникальный дизайн</div>
               </li>
               <li class="features__item feature">
                 <div class="feature__icon">
-                  <img src="/project_surf/img/saw.svg" alt="surf_icon">
+                  <svg class="feature-icon">
+                    <use xlink:href="/project_surf/sprites.svg#saw-icon"></use>
+                  </svg>
                 </div>
                 <div class="feature__text">Прочные материалы</div>
               </li>
               <li class="features__item feature">
                 <div class="feature__icon">
-                  <img src="/project_surf/img/delivery.svg" alt="surf_icon">
+                  <svg class="feature-icon">
+                    <use xlink:href="/project_surf/sprites.svg#delivery-icon"></use>
+                  </svg>
                 </div>
                 <div class="feature__text">Быстрая доставка</div>
               </li>
@@ -90,7 +103,9 @@
             <li class="benefits__item benefit">
               <div class="benefit__img">
                 <div class="benefit__img-wrapper">
-                  <img src="/project_surf/img/feat-2.svg" alt="Fit" class="benefit__icon">
+                  <svg class="benefit-icon">
+                    <use xlink:href="/project_surf/sprites.svg#feat-2"></use>
+                  </svg>
                 </div>
               </div>
               <div class="benefit__text">
@@ -104,7 +119,9 @@
             <li class="benefits__item benefit">
               <div class="benefit__img">
                 <div class="benefit__img-wrapper">
-                  <img src="/project_surf/img/feat-1.svg" alt="Strong" class="benefit__icon">
+                  <svg class="benefit-icon">
+                    <use xlink:href="/project_surf/sprites.svg#feat-1"></use>
+                  </svg>
                 </div>
               </div>
               <div class="benefit__text">
@@ -118,13 +135,17 @@
             <li class="benefits__item benefit">
               <div class="benefit__img">
                 <div class="benefit__img-wrapper">
-                  <img src="/project_surf/img/feat-3.svg" alt="Unique" class="benefit__icon">
+                  <svg class="benefit-icon">
+                    <use xlink:href="/project_surf/sprites.svg#feat-3"></use>
+                  </svg>
                 </div>
               </div>
-              <h3 class="benefit__text-title">Unique</h3>
-              <div class="benefit__text-desc">
-                <p>Вы станете обладателем уникального серфборда. Доска будет выполнена по вашему уникальному дизайну.
-                </p>
+              <div class="benefit__text">
+                <h3 class="benefit__text-title">Unique</h3>
+                <div class="benefit__text-desc">
+                  <p>Вы станете обладателем уникального серфборда. Доска будет выполнена по вашему уникальному дизайну.
+                  </p>
+                </div>
               </div>
             </li>
           </ul>
@@ -173,7 +194,7 @@
       </section>
       <section class="section order-section">
         <div class="container">
-          <h2 class="section__title order-title">Закажите доску</h2>
+          <h2 class="section__title order-title">Закажите доставку</h2>
           <form class="form">
             <div class="form__col">
               <div class="form__row">
@@ -222,7 +243,7 @@
                 <label class="radio">
                   <input type="radio" name="option" class="radio__elem">
                   <div class="radio__visible"></div>
-                  <div class="radio__title">Оплата наличными</div>
+                  <div class="radio__title">Потребуется сдача</div>
                 </label>
                 <label class="radio">
                   <input type="radio" name="option" class="radio__elem">
