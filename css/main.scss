@@ -1,21 +1,30 @@
 $containerWidth: 1100px;
-$baseFontSize: 18px;
+$baseFontSize: 16px;
 $baseFontWeight: 400;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
 
 //colors
 $black: #292929;
 $grey: #666666;
 $blue: #1968B1; 
 
+//z-indexes 
+$z-fixed-menu: 100;
+
 //normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
-
+@import "components/media.scss";
 //fonts
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
 @import  "layout";
 
 @import "components/hero";
 @import "components/header";
+@import "components/hamburger.scss";
 @import "components/features";
 @import "components/feature";
 @import "components/btn";
@@ -29,3 +38,5 @@ $blue: #1968B1;
 @import "components/order.scss";
 @import "components/form.scss";
 @import "components/radio.scss";
+@import "components/fixed-menu.scss";
+@import "components/menu.scss";

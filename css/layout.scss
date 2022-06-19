@@ -1,12 +1,23 @@
+html {
+  font-size: $baseFontSize;
+
+  @include tablets {
+    font-size: $baseFontSize;
+  }
+
+  @include phones {
+    font-size: $baseFontSize;
+  }
+}
+
 html,
 body {
   height: 100%;
 }
 
 body {
-  font-size: $baseFontSize;
   font-weight: $baseFontWeight;
-  font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,16 +28,19 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: $containerWidth + 20px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
   position: relative;
-  width: $containerWidth;
+  width: 100%;
+  max-width: $containerWidth;
   margin: 0 auto;
-  padding: 0 80px;
+  padding: 0 rem(80px);
+  @include tablets {
+    padding: 0;
+  }
 }
 
 //tag
